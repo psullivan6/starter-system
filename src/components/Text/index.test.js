@@ -1,10 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
 
-import Box from './components/Box';
-import Link from './components/Link';
-import Text, { variants } from './components/Text';
+import Text, { variants } from './index';
 
 // [TODO] Group this into "Typography" tests
 
