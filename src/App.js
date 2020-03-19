@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import Box from './components/Box';
+import Link from './components/Link';
 import Text from './components/Text';
 
 // Assets
@@ -28,6 +29,12 @@ function App() {
             quibusdam veniam ad velit fugit quidem labore minima eos quasi
             accusantium, perspiciatis expedita aut?
           </Text>
+          <Box as={Link} href="/" backgroundColor="#333" color="#fff">
+            Click Here Link
+          </Box>
+          <Link as={Box} href="/" backgroundColor="#fff" color="#333">
+            Click Here Link
+          </Link>
         </Box>
       </section>
     </div>
