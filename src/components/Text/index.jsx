@@ -31,7 +31,7 @@ export const variants = {
   }
 };
 
-const Text = styled.p`
+export const StyledText = styled.p`
   ${variant({
     variants
   })}
@@ -40,17 +40,17 @@ const Text = styled.p`
   ${typography};
 `;
 
-Text.defaultProps = {
+StyledText.defaultProps = {
   // lineHeight: 1, // [TODO] Figure out how to keep this AND have variant above able to override it
   variant: 'p'
 };
 
-const propsResolver = props => {
+const Text = props => {
   if (props.as != null && props.variant == null) {
-    return <Text variant={props.as} {...props} />;
+    return <StyledText variant={props.as} {...props} />;
   }
 
-  return <Text {...props} />;
+  return <StyledText {...props} />;
 };
 
-export default propsResolver;
+export default Text;

@@ -28,4 +28,12 @@ export const Flex = props => (
   <Box display="flex" justifyContent="center" alignItems="center" {...props} />
 );
 
+// OR
+
+export const FlexAttrs = styled(Box).attrs({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+})``;
+
 export default Box;
