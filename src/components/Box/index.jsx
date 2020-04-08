@@ -7,13 +7,13 @@ import {
   flexbox,
   layout,
   position,
-  space
+  space,
 } from 'styled-system';
 
 const Box = styled.div(
   {
     boxSizing: 'border-box',
-    minWidth: 0
+    minWidth: 0,
   },
   background,
   border,
@@ -24,16 +24,8 @@ const Box = styled.div(
   space
 );
 
-export const Flex = props => (
+export const Flex = (props) => (
   <Box display="flex" justifyContent="center" alignItems="center" {...props} />
 );
-
-// OR
-
-export const FlexAttrs = styled(Box).attrs({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center'
-})``;
 
 export default Box;

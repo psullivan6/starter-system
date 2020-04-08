@@ -1,10 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const Anchor = styled.a``;
+import { Anchor } from './styles';
 
-const Link = ({ href, children, ...rest }) => (
-  <Anchor href={href} {...rest}>
+const Link = ({ href, children, ...props }) => (
+  <Anchor href={href} {...props}>
     {children}
   </Anchor>
 );
