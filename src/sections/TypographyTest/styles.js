@@ -4,7 +4,7 @@ import themeGet from '../../utilities/themeGet';
 
 export const Headline = styled(StyledText).attrs(() => ({
   as: 'h1',
-  variant: 'h2'
+  variant: 'h4',
 }))`
   background: #ccc;
   padding: ${themeGet('space.4', '20px')};
